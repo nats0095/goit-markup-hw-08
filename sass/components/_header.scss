@@ -1,30 +1,85 @@
 .header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: var(--brand-color-white);
   display: flex;
-  padding: 24px 0px 25px;
   border: 1px solid #ececec;
+  @include tablet {
+  }
+  @include desktop {
+    padding: 24px 0px 25px;
+  }
+
+  &__menu-btn {
+    width: 40px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    cursor: pointer;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__menu-btn-svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__menu-btn-svg:is(:hover, :focus) {
+    fill: var(--brand-color-blue);
+  }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
+
   &__nav {
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 93px;
+
     outline: none;
-  }
-  &__nav-list {
     display: flex;
-    gap: 46px;
+    @include tablet {
+      gap: 83px;
+    }
+    @include desktop {
+      gap: 93px;
+    }
   }
+
+  &__nav-list {
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 60px;
+    }
+    @include desktop {
+      display: flex;
+      gap: 46px;
+    }
+  }
+
   &__nav-item {
     position: relative;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
+
   &__nav-link {
     color: var(--brand-color-black2);
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -32,6 +87,10 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
 
   &__nav-link:is(:hover, :focus) {
@@ -50,21 +109,35 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 48px;
+
     border-radius: 2px;
+    @include tablet {
+      top: 43px;
+    }
+    @include desktop {
+      top: 47px;
+    }
   }
 
   &__contacts {
-    display: flex;
-    gap: 50px;
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include desktop {
+      flex-direction: row;
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__contacts-link {
     color: var(--brand-color-gray2);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+
     letter-spacing: 0.02em;
     text-decoration: none;
     outline: none;
@@ -72,16 +145,33 @@
     align-items: center;
     fill: currentColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+      font-size: 12px;
+      line-height: 1.16;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
 
   &__contacts-link:is(:hover, :focus) {
     color: var(--brand-color-blue);
     transition-property: color;
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
+
   &__contacts-link-icon {
     margin-right: 10px;
     fill: var(--brand-color-gray3);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include tablet {
+    }
+    @include desktop {
+    }
   }
 
   &__contacts-link:is(:focus, :hover) .header__contacts-link-icon {

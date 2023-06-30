@@ -7,8 +7,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--brand-color-black2);
 }
 
@@ -26,14 +27,33 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 ul {
@@ -41,6 +61,7 @@ ul {
 }
 
 .caption {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

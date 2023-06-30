@@ -9,8 +9,6 @@
   }
 
   &__label {
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17px;
     letter-spacing: 0.01em;
@@ -53,12 +51,16 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     box-sizing: border-box;
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: transparent;
+
+    @include desktop {
+      width: 448px;
+    }
   }
 
   &__input-area:is(:focus, :active) {
@@ -72,12 +74,16 @@
 
   &__comment {
     box-sizing: border-box;
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
     resize: none;
+
+    @include desktop {
+      width: 448px;
+    }
   }
 
   &__comment:is(:focus, :active) {
@@ -103,26 +109,52 @@
     color: var(--brand-color-gray2);
   }
 
+  &__policy-inherit {
+    flex-direction: inherit;
+    margin-top: inherit;
+    position: inherit;
+    justify-content: inherit;
+    align-content: inherit;
+    display: inherit;
+    gap: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+  }
+
   &__checkbox {
     appearance: none;
   }
 
   &__checked-icon {
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left: -218px;
+    top: 5px;
     z-index: 400;
+
+    @include desktop {
+      left: 15px;
+      top: 10px;
+    }
   }
 
   &__agreement {
     color: var(--brand-color-gray2);
     font-family: "Roboto";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
-    padding-left: 37px;
-    padding-top: 2px;
+    padding-left: 24px;
+    padding-top: -3px;
+
+    @include desktop {
+      padding-top: 2px;
+      padding-left: 37px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
   }
 
   &__policy input[type="checkbox"] {
@@ -136,9 +168,14 @@
     border-radius: 2px;
     width: 16px;
     height: 15px;
-    top: 6px;
-    left: 13px;
+    top: 2px;
+    left: -221px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include desktop {
+      top: 6px;
+      left: 13px;
+    }
   }
 
   &__policy input[type="checkbox"]:checked {
@@ -171,11 +208,16 @@
     cursor: pointer;
     padding: 10px 41px 10px 42px;
     border-radius: 4px;
-    left: 124px;
+    left: 85px;
     top: 416px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include desktop {
+      left: 124px;
+      top: 416px;
+    }
   }
 }

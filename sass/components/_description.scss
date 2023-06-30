@@ -1,14 +1,35 @@
 .description {
   background-color: var(--brand-color-white);
-  margin-bottom: -94px;
+  padding-top: 94px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 45px;
+  }
+
+  @include desktop {
+    padding-bottom: 0;
+  }
 
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 450px;
+
+    @include tablet {
+      width: 354px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
   }
 
   &__icon {
-    width: 270px;
     height: 120px;
     background-color: var(--brand-color-gray);
     align-items: center;
@@ -29,11 +50,11 @@
   }
 
   &__text {
-    font-style: normal;
-    font-weight: 400;
+    display: flex;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--brand-color-gray2);
+    flex-wrap: wrap;
   }
 }
