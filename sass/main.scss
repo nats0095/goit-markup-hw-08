@@ -1,5 +1,5 @@
-@use './utils/vars' as *;
-@use './utils/mixins' as *;
+@import './utils/mixins';
+@import './utils/vars';
 @import './utils/global';
 @import './components/header';
 @import './components/logo';
