@@ -63,14 +63,16 @@
   </header>
   <main>
     <section class="section main-section">
-      <div class="container main-section__wrapper">
-        <h1 class="main-section__title">
-          Efektywne rozwiązania <br />
-          dla waszego biznesu
-        </h1>
-        <button class="main-section__button" data-modal-open type="button">
-          Zamów usługę
-        </button>
+      <div class="container">
+        <div class="container main-section__wrapper">
+          <h1 class="main-section__title">
+            Efektywne rozwiązania <br />
+            dla waszego biznesu
+          </h1>
+          <button class="main-section__button" data-modal-open type="button">
+            Zamów usługę
+          </button>
+        </div>
       </div>
     </section>
     <section class="section description">
@@ -362,97 +364,101 @@
       </div>
     </section>
     <section class="clients section">
-      <h2 class="caption clients__header">Nasi klienci</h2>
-      <ul class="clients__list">
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo1"></use>
-          </svg>
-        </li>
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo2"></use>
-          </svg>
-        </li>
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo3"></use>
-          </svg>
-        </li>
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo4"></use>
-          </svg>
-        </li>
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo5"></use>
-          </svg>
-        </li>
-        <li class="clients__item" tabindex="0">
-          <svg class="clients__icon" width="106" height="60,04">
-            <use xlink:href="images/icons.svg#icon-logo6"></use>
-          </svg>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer">
-    <section class="container footer__wrapper">
-      <div class="footer__address">
-        <a class="logo" href="index.html">
-          Web<span class="logo__studio--white">Studio</span></a>
-        <address class="footer__address-inherit">
-          <ul class="footer__address-list">
-            <li class="footer__address-city">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </li>
-            <li class="footer__address-email">
-              <a class="footer__address-link" href="emailto:info@example.com">
-                info@example.com</a>
-            </li>
-            <li>
-              <a class="footer__address-link" href="tel:+48111111111">+48 111 111 111</a>
-            </li>
-          </ul>
-        </address>
-      </div>
-      <div class="footer__join-main">
-        <p class="footer__join-us">Dołącz do nas</p>
-        <ul class="footer__social-media">
-          <li class="social-media__icon social-media__icon--footer" tabindex="0">
-            <svg class="social-media__svg-footer" width="20" height="20">
-              <use xlink:href="images/icons.svg#icon-instagram"></use>
+      <div class="container">
+        <h2 class="caption clients__header">Nasi klienci</h2>
+        <ul class="clients__list">
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo1"></use>
             </svg>
           </li>
-          <li class="social-media__icon social-media__icon--footer" tabindex="0">
-            <svg class="social-media__svg-footer" width="20" height="20">
-              <use xlink:href="images/icons.svg#icon-twitter"></use>
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo2"></use>
             </svg>
           </li>
-          <li class="social-media__icon social-media__icon--footer" tabindex="0">
-            <svg class="social-media__svg-footer" width="20" height="20">
-              <use xlink:href="images/icons.svg#icon-facebook"></use>
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo3"></use>
             </svg>
           </li>
-          <li class="social-media__icon social-media__icon--footer" tabindex="0">
-            <svg class="social-media__svg-footer" width="20" height="20">
-              <use xlink:href="images/icons.svg#icon-linkedin"></use>
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo4"></use>
+            </svg>
+          </li>
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo5"></use>
+            </svg>
+          </li>
+          <li class="clients__item" tabindex="0">
+            <svg class="clients__icon" width="106" height="60,04">
+              <use xlink:href="images/icons.svg#icon-logo6"></use>
             </svg>
           </li>
         </ul>
       </div>
-      <form name="newsletter-follow" class="footer__newsletter">
-        <label for="newsletter-input" class="footer__newsletter-label">Zapisz się do newslettera</label>
-        <input type="email" name="newsletter-email" placeholder="E-mail" class="footer__email-input"
-          id="newsletter-input" required />
-        <button type="submit" class="footer__button-submit">
-          Zapisz się
-          <svg width="24px" height="24px" class="newsletter-icon">
-            <use href="images/icons.svg#icon-send"></use>
-          </svg>
-        </button>
-      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="container footer__wrapper">
+      <div class="container">
+        <div class="footer__address">
+          <a class="logo" href="index.html">
+            Web<span class="logo__studio--white">Studio</span></a>
+          <address class="footer__address-inherit">
+            <ul class="footer__address-list">
+              <li class="footer__address-city">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li class="footer__address-email">
+                <a class="footer__address-link" href="emailto:info@example.com">
+                  info@example.com</a>
+              </li>
+              <li>
+                <a class="footer__address-link" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__join-main">
+          <p class="footer__join-us">Dołącz do nas</p>
+          <ul class="footer__social-media">
+            <li class="social-media__icon social-media__icon--footer" tabindex="0">
+              <svg class="social-media__svg-footer" width="20" height="20">
+                <use xlink:href="images/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon social-media__icon--footer" tabindex="0">
+              <svg class="social-media__svg-footer" width="20" height="20">
+                <use xlink:href="images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon social-media__icon--footer" tabindex="0">
+              <svg class="social-media__svg-footer" width="20" height="20">
+                <use xlink:href="images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon social-media__icon--footer" tabindex="0">
+              <svg class="social-media__svg-footer" width="20" height="20">
+                <use xlink:href="images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <form name="newsletter-follow" class="footer__newsletter">
+          <label for="newsletter-input" class="footer__newsletter-label">Zapisz się do newslettera</label>
+          <input type="email" name="newsletter-email" placeholder="E-mail" class="footer__email-input"
+            id="newsletter-input" required />
+          <button type="submit" class="footer__button-submit">
+            Zapisz się
+            <svg width="24px" height="24px" class="newsletter-icon">
+              <use href="images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </section>
   </footer>
   <div class="backdrop is-hidden" data-modal>
